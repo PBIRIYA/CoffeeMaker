@@ -15,6 +15,20 @@ namespace CoffeeMakerTest
             //Assert
             Assert.AreEqual("Your Order is received.", result);
         }
+        //[TestMethod]
+        //public void OrderACoffee_Should_Return_Received_MessageUsingStub()
+        //{
+        //    StarbuckStore store = new StarbuckStore(new Starbucks());
+        //    string result = store.OrderCoffee(2, 4);
+        //    Assert.AreEqual("Your Order is received.", result);
+        //}
+        [TestMethod]
+        public void Test()
+        {
+            StarbuckStore store = new StarbuckStore(new Starbucks());
+            string result = store.OrderCoffee(2, 4);
+            Assert.AreEqual("Your Order is received.", result);
+        }
     }
 }
 
